@@ -1,0 +1,359 @@
+mervesilk@Merves-MacBook-Pro ~
+  % io                                                                                                   !1446
+Io 20110905
+Io> Digimon := Object clone
+==>  Digimon_0x7fcdb05a9790:
+  type             = "Digimon"
+
+Io> Digimon type
+==> Digimon
+Io> Digimon description := "Created and lives in the Digital world, more than capable of kicking any and all Pokemons ass"
+==> Created and lives in the Digital world, more than capable of kicking any and all Pokemons ass
+Io> Digimon description
+==> Created and lives in the Digital world, more than capable of kicking any and all Pokemons ass
+Io> Digimon digivolve := method("Digivolve TO!")
+==> method(
+    "Digivolve TO!"
+)
+Io> Digimon digivolve
+==> Digivolve TO!
+Io> Digimon SeaDigi := "Gomamon"
+==> Gomamon
+Io> Digimon SeaDigi
+==> Gomamon
+Io> Gomamon digivolve
+
+  Exception: Object does not respond to 'Gomamon'
+  ---------
+  Object Gomamon                       Command Line 1
+
+Io> Digimon type
+==> Digimon
+Io> Digimon description
+==> Created and lives in the Digital world, more than capable of kicking any and all Pokemons ass
+Io> Digimon digivolve
+==> Digivolve TO!
+Io> Digimon SeaDigi
+==> Gomamon
+Io> gomamon := Digimon clone
+==>  Digimon_0x7fcdb0452390:
+
+Io> gomamon type
+==> Digimon
+Io> gomamon digivolve
+==> Digivolve TO!
+Io> Digimon nemesis := Pokemon
+
+  Exception: Object does not respond to 'Pokemon'
+  ---------
+  Object Pokemon                       Command Line 1
+
+Io> Digimon nemesis = Pokemon
+
+  Exception: Object does not respond to 'Pokemon'
+  ---------
+  Object Pokemon                       Command Line 1
+
+Io> Digimon nemesis := pokemon
+
+  Exception: Object does not respond to 'pokemon'
+  ---------
+  Object pokemon                       Command Line 1
+
+Io> Digimon nemesis = pokemon
+
+  Exception: Object does not respond to 'pokemon'
+  ---------
+  Object pokemon                       Command Line 1
+
+Io> Digimon nemesis := 'pokemon'
+
+  Exception: Object does not respond to '''
+  ---------
+  Object '                             Command Line 1
+
+Io> Digimon nemesis := "Pokemon"
+==> Pokemon
+Io> Digimon nemesis := "pokemon"
+==> pokemon
+Io> Digimon nemesis := "Pokemon"
+==> Pokemon
+Io> gomamon nemesis
+==> Pokemon
+Io> tentomon = Digimon clone
+
+  Exception: Slot tentomon not found. Must define slot using := operator before updating.
+  ---------
+  message 'updateSlot' in 'Command Line' on line 1
+
+Io> tentomon ;= Digimon clone
+
+  Exception: Object does not respond to 'tentomon'
+  ---------
+  Object tentomon                      Command Line 1
+
+Io> tentomon := Digimon clone
+==>  Digimon_0x7fcdb04849b0:
+
+Io> Digimon list
+==> list()
+Io> Digimon list println
+list()
+==> list()
+Io> todo := list('1','2','3')
+
+  Exception: Object does not respond to '''
+  ---------
+  Object '                             Command Line 1
+  Object list                          Command Line 1
+
+Io> todo := list("1","2","3")
+==> list(1, 2, 3)
+Io> todo println
+list(1, 2, 3)
+==> list(1, 2, 3)
+Io> Digimon digivises := List clone
+==> list()
+Io> Digimon digivises := list("gomamon-vise", "tentamon-vise", "gabumon-vise", "biyomon-vise")
+==> list(gomamon-vise, tentamon-vise, gabumon-vise, biyomon-vise)
+Io> Digimon digivises
+==> list(gomamon-vise, tentamon-vise, gabumon-vise, biyomon-vise)
+Io> Digimon tags_and_crests := Map clone
+==>  Map_0x7fcdb04aaf90:
+
+Io> Digimon tags_and_crests atPut("gomamonTag", "reliability")
+==>  Map_0x7fcdb04aaf90:
+
+Io> Digimon tags_and_crests list
+==> list()
+Io> Digimon tags_and_crests count
+
+  Exception: Map does not respond to 'count'
+  ---------
+  Map count                            Command Line 1
+
+Io> Digimon tags_and_crests at("gomamonTag")
+==> reliability
+Io> Digimon tags_and_crests atPut("tentomanTag", "intellect")
+==>  Map_0x7fcdb04aaf90:
+
+Io> Digimon tags_and_crests at("tentamonTag")
+==> nil
+Io> Digimon tags_and_crests at("tentomonTag")
+==> nil
+Io> Digimon tags_and_crests atPut("tentomonTag", "intellect")
+==>  Map_0x7fcdb04aaf90:
+
+Io> Digimon tags_and_crests keys
+==> list(tentomanTag, gomamonTag, tentomonTag)
+Io> Digimon tags_and_crests values
+==> list(intellect, reliability, intellect)
+Io> Digimon tags_and_crests remove("tentoman")
+
+  Exception: Map does not respond to 'remove'
+  ---------
+  Map remove                           Command Line 1
+
+Io> Digimon tags_and_crests remove("tentomanTag")
+
+  Exception: Map does not respond to 'remove'
+  ---------
+  Map remove                           Command Line 1
+
+Io> exit
+
+mervesilk@Merves-MacBook-Pro ~
+  % io                                                                                                   !1447
+Io 20110905
+Io> Digimon := Object clone
+==>  Digimon_0x7f9310704c10:
+  type             = "Digimon"
+
+Io> Digimon description = "Digimon are Digital monsters, protectors of the virtual and physical relms"
+
+  Exception: Slot description not found. Must define slot using := operator before updating.
+  ---------
+  message 'updateSlot' in 'Command Line' on line 1
+
+Io> Digimon description := "Digimon are Digital monsters, protectors of the virtual and physical relms"
+==> Digimon are Digital monsters, protectors of the virtual and physical relms
+Io> Digimon description
+==> Digimon are Digital monsters, protectors of the virtual and physical relms
+Io> Digimon digivolve := method("Digivolve TO!")
+==> method(
+    "Digivolve TO!"
+)
+Io> Digimon digivolve
+==> Digivolve TO!
+Io> Gomamon := Digimon clone
+==>  Gomamon_0x7f931071d2f0:
+  type             = "Gomamon"
+
+Io> Tentamon := Digimon clone
+==>  Tentamon_0x7f9310627480:
+  type             = "Tentamon"
+
+Io> method("which one is the best digimon?" println)
+==> method(
+    "which one is the best digimon?" println
+)
+Io> Gomamon slotNames
+==> list(type)
+Io> Digimon slotNames
+==> list(digivolve, type, description)
+Io> Gomamon digivolve
+==> Digivolve TO!
+Io> tentomon description
+
+  Exception: Object does not respond to 'tentomon'
+  ---------
+  Object tentomon                      Command Line 1
+
+Io> tentamon description
+
+  Exception: Object does not respond to 'tentamon'
+  ---------
+  Object tentamon                      Command Line 1
+
+Io> Tentamon description
+==> Digimon are Digital monsters, protectors of the virtual and physical relms
+Io> Digimon allies := method("Chosen human" println)
+==> method(
+    "Chosen human" println
+)
+Io> Tentamon allies
+Chosen human
+==> Chosen human
+Io> tentamon := Digimon clone
+==>  Digimon_0x7f93106f71e0:
+
+Io> gomamon := Digimon clone
+==>  Digimon_0x7f9310758f30:
+
+Io> gomamon type
+==> Digimon
+Io> Gomamon type
+==> Gomamon
+Io> Gomamon digivolve
+==> Digivolve TO!
+Io> gomamon digivolve
+==> Digivolve TO!
+Io> Digimon := list("have tags", "have crests", "have human companions")
+==> list(have tags, have crests, have human companions)
+Io> Digimon slotNames
+==> list(type)
+Io> Digimon size
+==> 3
+Io> Digimon 2
+==> 2
+Io> Digimon at(2)
+==> have human companions
+Io> Digimon append("fight evil")
+==> list(have tags, have crests, have human companions, fight evil)
+Io> Digimon size
+==> 4
+Io> Digimon at(3)
+==> fight evil
+Io> list(1,2,3,4) sunm
+
+  Exception: List does not respond to 'sunm'
+  ---------
+  List sunm                            Command Line 1
+
+Io> list(1,2,3,4) sum
+==> 10
+Io> list(1,2,3,4) pop
+==> 4
+Io> list(1,2,3,4) average
+==> 2.5
+Io> list(1,2,3,4) prepend(1)
+==> list(1, 1, 2, 3, 4)
+Io> list() isEmpty
+==> true
+Io> Digimon size
+==> 4
+Io> Digimon list
+==> list()
+Io> Digimon := Map clone
+==>  Digimon_0x7f93104ae550:
+  type             = "Digimon"
+
+Io> Digimon atPut("tags","crests")
+==>  Digimon_0x7f93104ae550:
+  type             = "Digimon"
+
+Io> Digimon at("tags")
+==> crests
+Io> Digimon atPut("gomamon","Joe")
+==>  Digimon_0x7f93104ae550:
+  type             = "Digimon"
+
+Io> Digimon slotNames
+==> list(type)
+Io> Digimon keys
+==> list(gomamon, tags)
+Io> Digimon values
+==> list(Joe, crests)
+Io> Digimon removeAt("gomamon","Joe")
+==>  Digimon_0x7f93104ae550:
+  type             = "Digimon"
+
+Io> Digimon keys
+==> list(tags)
+Io> Digimon values
+==> list(crests)
+Io> Digimon list
+==> list()
+Io> Digimon asList
+==> list(list(tags, crests))
+Io> how many digi can one have(a, b, a + b)
+
+  Exception: Object does not respond to 'how'
+  ---------
+  Object how                           Command Line 1
+
+Io> increase your digimon! := method(a, b, a + b)
+
+  Exception: Object does not respond to 'increase'
+  ---------
+  Object increase                      Command Line 1
+
+Io> increase your digimon := method(a, b, a + b)
+
+  Exception: Object does not respond to 'increase'
+  ---------
+  Object increase                      Command Line 1
+
+Io> Increase your digimon := method(a, b, a + b)
+
+  Exception: Object does not respond to 'Increase'
+  ---------
+  Object Increase                      Command Line 1
+
+Io> IncreaseDigimon := Object clone
+==>  IncreaseDigimon_0x7f931060b4b0:
+  type             = "IncreaseDigimon"
+
+Io> IncreaseDigimon add := method(a, b, a + b)
+==> method(a, b,
+    a + b
+)
+Io> IncreaseDigimon add(2,7)
+==> 9
+Io> DecreaseDigimon := IncreaseDigimon clone
+==>  DecreaseDigimon_0x7f93107377f0:
+  type             = "DecreaseDigimon"
+
+Io> DecreaseDigimon fewer := method(a, b, a - b)
+==> method(a, b,
+    a - b
+)
+Io> DecreaseDigimon fewer(5,1)
+==> 4
+Io> quit
+
+  Exception: Object does not respond to 'quit'
+  ---------
+  Object quit                          Command Line 1
+
+Io> exit
